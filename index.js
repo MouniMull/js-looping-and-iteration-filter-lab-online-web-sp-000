@@ -15,5 +15,6 @@ function fuzzyMatch (list, partialName) {
 
 function matchName (list, string){
   return list.filter(function (driverNames) {
-    return driverNames[]
+    return driverNames.name.toLowerCase() === string.toLowerCase();
+});
 }
